@@ -33,13 +33,11 @@
     header{position:sticky;top:0;z-index:30;background:rgba(248,242,230,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.header-in{height:74px;display:flex;align-items:center;gap:18px}
     .brand{margin-right:auto;line-height:1}.brand strong{display:block;font:700 1.05rem var(--serif);letter-spacing:.04em}.brand small{display:block;margin-top:5px;color:var(--muted);font-size:.56rem;letter-spacing:.09em;text-transform:uppercase}
     .nav{display:flex;gap:13px;font-size:.75rem;font-weight:650}.phone{font-weight:800}
-    .hero{min-height:calc(100vh - 74px);position:relative;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
-    .hero-media{position:absolute;inset:0;z-index:0}.hero-media video,.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform}
-    .hero:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(43,47,44,.87),rgba(43,47,44,.3) 55%,rgba(43,47,44,.06))}
+    .hero{min-height:calc(100vh - 74px);position:relative;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--charcoal)}
     .hero-content{position:relative;z-index:2;padding:76px 0 58px;max-width:680px}.hero .eyebrow{color:#a9d3c0}
     .hero h1{font:700 clamp(2.8rem,6.2vw,5.2rem)/1 var(--serif);letter-spacing:-.02em;margin:.2em 0}.hero h2{font:600 clamp(1.25rem,2.2vw,1.85rem)/1.25 var(--serif);margin:0 0 14px;max-width:560px}
     .hero p{color:#eef1e6;max-width:540px}.hero-address{display:flex;align-items:center;gap:18px;border-top:1px solid rgba(255,255,255,.28);padding-top:20px;margin-top:22px;font-size:.9rem}
-    .hero-address a{color:#a9d3c0;font-weight:800}.image-note{position:absolute;left:16px;right:16px;bottom:16px;z-index:2;background:rgba(43,47,44,.88);padding:10px 16px;border-radius:8px;font-size:.85rem;font-weight:700;text-align:center}
+    .hero-address a{color:#a9d3c0;font-weight:800}
     .facts{background:var(--charcoal);color:#fff}.facts-grid{display:grid;grid-template-columns:repeat(6,1fr)}.fact{padding:20px 8px;border-right:1px solid rgba(255,255,255,.14);text-align:center}.fact:last-child{border:0}
     .fact b{display:block;font:700 .82rem var(--serif)}.fact span{font-size:.55rem;text-transform:uppercase;letter-spacing:.02em;color:#c9cfc4}
     .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
@@ -97,7 +95,7 @@
     .reveal-item{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,.8,.3,1),transform .8s cubic-bezier(.16,.8,.3,1)}.reveal-group.visible .reveal-item{opacity:1;transform:none}
     .reveal-group.visible .reveal-item:nth-child(1){transition-delay:0s}.reveal-group.visible .reveal-item:nth-child(2){transition-delay:.09s}.reveal-group.visible .reveal-item:nth-child(3){transition-delay:.18s}.reveal-group.visible .reveal-item:nth-child(4){transition-delay:.27s}.reveal-group.visible .reveal-item:nth-child(5){transition-delay:.36s}.reveal-group.visible .reveal-item:nth-child(6){transition-delay:.45s}.reveal-group.visible .reveal-item:nth-child(7){transition-delay:.54s}.reveal-group.visible .reveal-item:nth-child(8){transition-delay:.63s}
     @supports(background-attachment:fixed){@media(min-width:1001px) and (prefers-reduced-motion:no-preference){.final{background-attachment:fixed}}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.reveal-item{opacity:1;transform:none;transition:none}.btn{transition:none}.hero-media{transform:none!important}.stay-media img,.feature-media img,.gallery figure img{transition:none}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.reveal-item{opacity:1;transform:none;transition:none}.btn{transition:none}.stay-media img,.feature-media img,.gallery figure img{transition:none}}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Готель «Біля річки»","image":"https://bilyarichky.webart.work/images/hero.jpg","address":{"@type":"PostalAddress","streetAddress":"вул. Онуфріївська, 5","addressLocality":"Кам’янець-Подільський","addressCountry":"UA"},"telephone":"+380975696528","url":"https://bilyarichky.webart.work/"}</script>
 </head>
@@ -105,7 +103,7 @@
   <a class="skip" href="#top">До основного вмісту</a>
   <header><div class="wrap header-in"><a class="brand" href="#top"><strong>БІЛЯ РІЧКИ</strong><small>Проживання · Активний відпочинок · Кам’янець-Подільський</small></a><nav id="nav" class="nav" aria-label="Основна навігація"><a href="#stay">Проживання</a><a href="#food">Кухня</a><a href="#activities">Активності</a><a href="#chan">Чан</a><a href="#events">Події</a><a href="#gallery">Галерея</a><a href="#contacts">Контакти</a></nav><a class="phone" href="tel:+380975696528">+38 097 569 65 28</a><a class="btn primary" href="#booking">Запланувати відпочинок</a></div></header>
   <main id="top">
-    <section class="hero"><div class="hero-media"><video id="heroVideo" autoplay muted loop playsinline preload="auto"><source src="hero-bg.mp4" type="video/mp4"></video></div><div class="wrap hero-content"><span class="eyebrow">Проживання · Кухня · Активності · Відпочинок</span><h1>Біля річки</h1><h2>Не просто переночувати, а провести день по-іншому</h2><p>Проживання, кухня, чан, активний відпочинок та події у Кам’янці-Подільському.</p><div class="actions"><a class="btn primary" href="#booking">Запланувати відпочинок</a><a class="btn" style="border-color:#fff;color:#fff" href="#activities">Переглянути активності</a></div><div class="hero-address"><span>вул. Онуфріївська, 5</span><a href="https://www.google.com/maps/search/?api=1&query=Готель+Біля+річки,+вул.+Онуфріївська+5,+Кам’янець-Подільський" target="_blank" rel="noopener">Показати на карті →</a></div></div><span class="image-note">Ілюстративне зображення, не підтверджує вид на річку, пляж чи доступ до води</span></section>
+    <section class="hero"><div class="wrap hero-content"><span class="eyebrow">Проживання · Кухня · Активності · Відпочинок</span><h1>Біля річки</h1><h2>Не просто переночувати, а провести день по-іншому</h2><p>Проживання, кухня, чан, активний відпочинок та події у Кам’янці-Подільському.</p><div class="actions"><a class="btn primary" href="#booking">Запланувати відпочинок</a><a class="btn" style="border-color:#fff;color:#fff" href="#activities">Переглянути активності</a></div><div class="hero-address"><span>вул. Онуфріївська, 5</span><a href="https://www.google.com/maps/search/?api=1&query=Готель+Біля+річки,+вул.+Онуфріївська+5,+Кам’янець-Подільський" target="_blank" rel="noopener">Показати на карті →</a></div></div></section>
     <section class="facts"><div class="wrap facts-grid reveal-group"><div class="fact reveal-item"><b>Проживання</b><span>Готельні послуги</span></div><div class="fact reveal-item"><b>Кафе</b><span>Домашня·укр.·європ.</span></div><div class="fact reveal-item"><b>Чан</b><span>Підтверджено джерелом</span></div><div class="fact reveal-item"><b>Байдарки</b><span>Підтверджено джерелом</span></div><div class="fact reveal-item"><b>Верхова їзда</b><span>Підтверджено джерелом</span></div><div class="fact reveal-item"><b>Події</b><span>Банкетний зал</span></div></div></section>
     <section class="section" id="about"><div class="wrap about-grid"><div><span class="eyebrow">Про нас</span><h2>Місце, де проживання, це тільки початок</h2><p class="lead">«Біля річки» поєднує проживання з їжею, outdoor-відпочинком та активностями: кафе, жива музика, чан, альтанки, верхова їзда, БРДМ-2, катери, байдарки, екскурсії та банкетний зал.</p><a class="btn primary" href="#selector">Обрати формат відпочинку</a></div><div class="name-note">Назва «Біля річки» не є доказом того, що всі номери мають вид на воду, що на території є пляж чи власний причал, або що можна купатися. Точна річка, відстань і доступ до води наразі не підтверджені.</div></div></section>
     <section class="section selector" id="selector"><div class="wrap"><span class="eyebrow">Що вас цікавить?</span><h2>Оберіть свій формат</h2><div class="selector-grid reveal-group"><article class="select-card reveal-item"><span>Проживання</span><h3>Проживання</h3><a href="#stay">Номери →</a></article><article class="select-card reveal-item"><span>Вода</span><h3>Вода</h3><a href="#activities">Катери / байдарки →</a></article><article class="select-card reveal-item"><span>Верхи</span><h3>Верхова їзда</h3><a href="#activities">Дізнатися більше →</a></article><article class="select-card reveal-item"><span>Пригода</span><h3>БРДМ-2</h3><a href="#activities">Уточнити →</a></article><article class="select-card reveal-item"><span>Відпочинок</span><h3>Чан</h3><a href="#chan">Забронювати →</a></article><article class="select-card reveal-item"><span>Свято</span><h3>Подія</h3><a href="#events">Банкетний зал →</a></article></div></div></section>
@@ -128,16 +126,6 @@
   <script>
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:.1});
     document.querySelectorAll('.reveal,.reveal-group').forEach(el=>observer.observe(el));
-    const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const heroVideo=document.querySelector('#heroVideo'),heroMedia=document.querySelector('.hero-media');
-    if(heroVideo){
-      const vObserver=new IntersectionObserver(([e])=>{e.isIntersecting?heroVideo.play().catch(()=>{}):heroVideo.pause()},{threshold:0});
-      vObserver.observe(heroVideo);
-      if(!reduceMotion){
-        const hero=document.querySelector('.hero');
-        addEventListener('scroll',()=>{const r=hero.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)heroMedia.style.transform=`translateY(${scrollY*.28}px)`},{passive:true});
-      }
-    }
   </script>
 </body>
 </html>
