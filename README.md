@@ -26,3 +26,6 @@ Live site: https://bilyarichky.webart.work
 
 ## Notes
 The page explicitly flags several unconfirmed details: exact room count, room categories, capacity, Wi-Fi, and pricing for accommodation; the specific river, distance to it, and whether there is beach or water access; sauna availability (not confirmed, separate from the chan); banquet hall guest capacity; and details (routes, equipment, age limits, pricing) for kayaking, boat trips, horseback riding, and BRDM-2 rides. Email, a dedicated website, and Instagram are also listed as not confirmed.
+
+## Forms
+Connected to HotelOS (`kp-bilyarichky`): `stay-request` (after Проживання), `sauna-request` (chan booking; sauna itself is not confirmed, so no service select), `event-request` (banquet hall, after Події).
